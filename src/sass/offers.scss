@@ -1,0 +1,229 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+    
+    background-image: url('/src/img/trees-2738830_640_optimized.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+	font-family: 'Montserrat', sans-serif;
+
+	font-size: 1.6rem;
+}
+h1{
+    color: black;
+    background-color: white;
+    font-size: 3rem;
+    margin-top: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    
+    
+}
+.arrow-back{
+z-index: 10;
+border: 2px dotted white;
+background-color: rgba(0, 0, 0, 0.5);
+
+i{
+    font-size: 3rem;
+   
+}
+&:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+}
+
+.card1{
+    .img{  
+        background-image: url('/src/img/hut-1267670_640_optimized.jpg');   
+        .shadow{
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    }
+    
+}
+.card2{
+    .img{  
+        background-image: url('/src/img/family-4610864_640_optimized.jpg'); 
+        .shadow{
+            background-color: rgba(0, 0, 0, 0.3);
+        }  
+    }
+    
+}
+.card3{
+    .img{  
+        background-image: url('/src/img/young-people-3575167_640_optimized.jpg');  
+        .shadow{
+            background-color: rgba(0, 0, 0, 0.3);
+        } 
+    }
+    
+}
+
+.card{
+    background-color: white;
+    transition: transform .3s;
+    &:hover{
+        transform: scale(1.1);
+    }
+
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        margin: 6em auto;
+        
+        width: 85%;
+        height: 30em;
+        .img{
+            
+            position: relative;
+            width: 100%;
+            
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            .shadow{
+    position: absolute;
+    top: 0;right: 0;bottom: 0;left: 0;
+    
+            }   
+        }
+        .info{
+            padding: 1em;
+            h2{
+                margin-bottom: 0.5em;
+                text-align: center;
+            }
+            p{
+                font-size: 1.2rem;
+                text-align: center;
+            }
+        }
+        
+        a{
+            
+            display: block;
+            text-decoration: none;
+            padding: 1em 2em;
+            border: transparent;
+            border-radius: 8px;
+            background-color: #22cc1c;
+            color: black;
+            margin: 0 auto;
+            margin-bottom: 1em;
+            transition: background-color .3s;
+            &:hover{
+                background-color: #189914;
+                color: white;
+            }
+        }
+    }
+
+
+
+
+    @media(min-width:576px){
+        
+    }
+    @media(min-width:768px){
+        body{
+            background-image: url('/src/img/trees-2738830_1920_optimized.jpg');
+        }
+        .card{
+
+            .info{
+                h2{
+                    font-size: 2.8rem;
+                }
+                p{
+                    font-size: 1.8rem;
+                }
+            }
+            a{
+                font-size: 2rem;
+            }
+        }
+
+    }
+    @media(min-width:992px){
+        .arrow-back{
+            padding: 2em;
+            i{
+                font-size: 4rem;
+            }
+        }
+        .other-offers{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            
+        }
+        .card{
+            width: 43%;
+            height: 35em;
+            .info{
+                h2{
+                    font-size: 3rem;
+                }
+            }
+            
+        }
+        
+        .card1{
+            .img{  
+                background-image: url('/src/img/hut-1267670_1920_optimized.jpg');   
+                
+            }
+            margin-bottom: 0;
+            
+        }
+        .card2{
+            .img{  
+                background-image: url('/src/img/family-4610864_1920_optimized.jpg'); 
+                 
+            }
+            margin-bottom: 0;
+        }
+        .card3{
+            .img{  
+                background-image: url('/src/img/young-people-3575167_1920_optimized.jpg');  
+                
+            }
+            
+        }
+        
+
+    }
+    @media(min-width:1200px){
+        .other-offers{
+            margin: 0 1em;
+        }
+        .card{
+            width:30%;
+            height: 35em;
+            .info{
+                h2{
+                    font-size: 3rem;
+                }
+            }
+            
+        }
+        
+    }
